@@ -1,5 +1,5 @@
 *nii.gz
-venv/
+*venv/
 *.egg-info/
 *.eggs/
 __pycache__/
