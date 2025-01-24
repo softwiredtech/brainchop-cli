@@ -26,11 +26,12 @@ Where:
 
 ## Export model to WebGPU
 
-1. Get the tinygrad repo to be able to use `export_model` (`export_model` is not yet in core tinygrad. The fork fetched also has f16 support)
-`./setup_tinygrad.sh`
-<br>
+Get the tinygrad repo to be able to use `export_model` (`export_model` is not yet in core tinygrad. The fork fetched also has f16 support)
 
-2. Use `EXPORT=1` to export the model, and pass in the model, which you want to select (`tissue_fast` in this example):
+`./setup_tinygrad.sh`
+
+Use `EXPORT=1 WEBGPU=1` to export the model, and pass in the model, which you want to select (`tissue_fast` in this example):
+
 `EXPORT=1 WEBGPU=1 PYTHONPATH=".:./tinygrad" python3 brainchop/main.py -m tissue_fast '/path/to/volume.nii'`
 
 ## Requirements
